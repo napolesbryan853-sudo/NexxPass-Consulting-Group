@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexxPass Consulting Group</title>
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>NexxPass Consulting Group</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h2>Consultoría Especializada para Centros Médicos</h2>
+      <p>
+        En NexxPass Consulting Group ofrecemos soluciones integrales para la
+        gestión, optimización y crecimiento de tu centro médico.
+      </p>
+    </div>
+  </section>
+
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2>Servicios</h2>
+      <ul>
+        <li><strong>Gestión y Administración Hospitalaria:</strong> Optimización de procesos administrativos y gestión de recursos médicos.</li>
+        <li><strong>Calidad y Seguridad del Paciente:</strong> Implementación de sistemas de calidad y protocolos de seguridad.</li>
+        <li><strong>Tecnologías de la Información para Salud:</strong> Implementación de HIS y digitalización de procesos clínicos.</li>
+        <li><strong>Recursos Humanos:</strong> Reclutamiento, capacitación y gestión de desempeño.</li>
+        <li><strong>Finanzas y Economía:</strong> Análisis financiero, control de gastos y gestión de contratos.</li>
+        <li><strong>Marketing y Comunicación:</strong> Estrategias para posicionamiento y captación de pacientes.</li>
+        <li><strong>Regulación y Cumplimiento:</strong> Asesoría en normativas y preparación para auditorías.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div id="formMessage"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 NexxPass Consulting Group. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Manejo básico del envío del formulario (solo para demo, no envía emails reales)
+    const form = document.getElementById('contactForm');
+    const messageDiv = document.getElementById('formMessage');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      messageDiv.textContent =
+        "Gracias por contactarnos, " + form.nombre.value + ". Pronto te responderemos.";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
