@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="html">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,22 +8,23 @@
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1>NexxPass Consulting Group</h1>
+    <div class="container header-content">
+      <img src="Consulting Group.png" alt="NexxPass Consulting Group Logo" class="logo" />
       <nav>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#inicio" data-key="inicio">Inicio</a></li>
+          <li><a href="#servicios" data-key="servicios">Servicios</a></li>
+          <li><a href="#contacto" data-key="contacto">Contacto</a></li>
         </ul>
       </nav>
+      <button id="langToggle" aria-label="Cambiar idioma">EN</button>
     </div>
   </header>
 
   <section id="inicio" class="hero">
     <div class="container">
-      <h2>Consultoría Especializada para Centros Médicos</h2>
-      <p>
+      <h2 data-key="heroTitle">Consultoría Especializada para Centros Médicos</h2>
+      <p data-key="heroText">
         En NexxPass Consulting Group ofrecemos soluciones integrales para la
         gestión, optimización y crecimiento de tu centro médico.
       </p>
@@ -32,33 +33,66 @@
 
   <section id="servicios" class="services">
     <div class="container">
-      <h2>Servicios</h2>
+      <h2 data-key="servicesTitle">Servicios</h2>
       <ul>
-        <li><strong>Gestión y Administración Hospitalaria:</strong> Optimización de procesos administrativos y gestión de recursos médicos.</li>
-        <li><strong>Calidad y Seguridad del Paciente:</strong> Implementación de sistemas de calidad y protocolos de seguridad.</li>
-        <li><strong>Tecnologías de la Información para Salud:</strong> Implementación de HIS y digitalización de procesos clínicos.</li>
-        <li><strong>Recursos Humanos:</strong> Reclutamiento, capacitación y gestión de desempeño.</li>
-        <li><strong>Finanzas y Economía:</strong> Análisis financiero, control de gastos y gestión de contratos.</li>
-        <li><strong>Marketing y Comunicación:</strong> Estrategias para posicionamiento y captación de pacientes.</li>
-        <li><strong>Regulación y Cumplimiento:</strong> Asesoría en normativas y preparación para auditorías.</li>
+        <li>
+          <strong data-key="service1Title">Gestión y Administración Hospitalaria:</strong>
+          <span data-key="service1Desc">Optimización de procesos administrativos y gestión de recursos médicos.</span>
+        </li>
+        <li>
+          <strong data-key="service2Title">Calidad y Seguridad del Paciente:</strong>
+          <span data-key="service2Desc">Implementación de sistemas de calidad y protocolos de seguridad.</span>
+        </li>
+        <li>
+          <strong data-key="service3Title">Tecnologías de la Información para Salud:</strong>
+          <span data-key="service3Desc">Implementación de HIS y digitalización de procesos clínicos.</span>
+        </li>
+        <li>
+          <strong data-key="service4Title">Recursos Humanos:</strong>
+          <span data-key="service4Desc">Reclutamiento, capacitación y gestión de desempeño.</span>
+        </li>
+        <li>
+          <strong data-key="service5Title">Finanzas y Economía:</strong>
+          <span data-key="service5Desc">Análisis financiero, control de gastos y gestión de contratos.</span>
+        </li>
+        <li>
+          <strong data-key="service6Title">Marketing y Comunicación:</strong>
+          <span data-key="service6Desc">Estrategias para posicionamiento y captación de pacientes.</span>
+        </li>
+        <li>
+          <strong data-key="service7Title">Regulación y Cumplimiento:</strong>
+          <span data-key="service7Desc">Asesoría en normativas y preparación para auditorías.</span>
+        </li>
       </ul>
     </div>
   </section>
 
   <section id="contacto" class="contact">
     <div class="container">
-      <h2>Contacto</h2>
-      <form id="contactForm">
-        <label for="nombre">Nombre:</label>
+      <h2 data-key="contactTitle">Contacto</h2>
+      <ul class="contact-info">
+        <li><span class="icon">📞</span> 786-770-6827</li>
+        <li><span class="icon">✉️</span> &lt;a href="mailto:nexxpass@consultant.com"&gt;nexxpass@consultant.com</a></li>
+        <li><span class="icon">🌐</span> <a href="https://www.nexxpassconsulting.digital" [1](#citation-fallback-0) target="_blank" rel="noopener noreferrer">www.nexxpassconsulting.digital</a></li>
+        <li><span class="icon">📸</span> <a href="https://www.instagram.com/nexxpassconsulting" [2](#citation-fallback-1) target="_blank" rel="noopener noreferrer">@nexxpassconsulting</a></li>
+      </ul>
+
+      <!-- Formulario usando Netlify Forms -->
+      <form name="contact" method="POST" data-netlify="true" id="contactForm" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </p>
+        <label for="nombre" data-key="formNameLabel">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
 
-        <label for="email">Correo Electrónico:</label>
+        <label for="email" data-key="formEmailLabel">Correo Electrónico:</label>
         <input type="email" id="email" name="email" required />
 
-        <label for="mensaje">Mensaje:</label>
+        <label for="mensaje" data-key="formMessageLabel">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-        <button type="submit">Enviar</button>
+        <button type="submit" data-key="formSubmitBtn">Enviar</button>
       </form>
       <div id="formMessage"></div>
     </div>
@@ -66,20 +100,113 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 NexxPass Consulting Group. Todos los derechos reservados.</p>
+      <p>© 2025 NexxPass Consulting Group. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <script>
-    // Manejo básico del envío del formulario (solo para demo, no envía emails reales)
-    const form = document.getElementById('contactForm');
-    const messageDiv = document.getElementById('formMessage');
+    // Traducción de textos Español-Inglés usando data-key
+    const translations = {
+      es: {
+        inicio: "Inicio",
+        servicios: "Servicios",
+        contacto: "Contacto",
+        heroTitle: "Consultoría Especializada para Centros Médicos",
+        heroText: "En NexxPass Consulting Group ofrecemos soluciones integrales para la gestión, optimización y crecimiento de tu centro médico.",
+        servicesTitle: "Servicios",
+        service1Title: "Gestión y Administración Hospitalaria:",
+        service1Desc: "Optimización de procesos administrativos y gestión de recursos médicos.",
+        service2Title: "Calidad y Seguridad del Paciente:",
+        service2Desc: "Implementación de sistemas de calidad y protocolos de seguridad.",
+        service3Title: "Tecnologías de la Información para Salud:",
+        service3Desc: "Implementación de HIS y digitalización de procesos clínicos.",
+        service4Title: "Recursos Humanos:",
+        service4Desc: "Reclutamiento, capacitación y gestión de desempeño.",
+        service5Title: "Finanzas y Economía:",
+        service5Desc: "Análisis financiero, control de gastos y gestión de contratos.",
+        service6Title: "Marketing y Comunicación:",
+        service6Desc: "Estrategias para posicionamiento y captación de pacientes.",
+        service7Title: "Regulación y Cumplimiento:",
+        service7Desc: "Asesoría en normativas y preparación para auditorías.",
+        contactTitle: "Contacto",
+        formNameLabel: "Nombre:",
+        formEmailLabel: "Correo Electrónico:",
+        formMessageLabel: "Mensaje:",
+        formSubmitBtn: "Enviar"
+      },
+      en: {
+        inicio: "Home",
+        servicios: "Services",
+        contacto: "Contact",
+        heroTitle: "Specialized Consulting for Medical Centers",
+        heroText: "At NexxPass Consulting Group, we offer comprehensive solutions for managing, optimizing, and growing your medical center.",
+        servicesTitle: "Services",
+        service1Title: "Hospital Management and Administration:",
+        service1Desc: "Optimization of administrative processes and management of medical resources.",
+        service2Title: "Patient Quality and Safety:",
+        service2Desc: "Implementation of quality systems and safety protocols.",
+        service3Title: "Health Information Technologies:",
+        service3Desc: "Implementation of HIS and digitization of clinical processes.",
+        service4Title: "Human Resources:",
+        service4Desc: "Recruitment, training, and performance management.",
+        service5Title: "Finance and Economics:",
+        service5Desc: "Financial analysis, expense control, and contract management.",
+        service6Title: "Marketing and Communication:",
+        service6Desc: "Strategies for positioning and patient acquisition.",
+        service7Title: "Regulation and Compliance:",
+        service7Desc: "Advisory on regulations and audit preparation.",
+        contactTitle: "Contact",
+        formNameLabel: "Name:",
+        formEmailLabel: "Email:",
+        formMessageLabel: "Message:",
+        formSubmitBtn: "Send"
+      }
+    };
 
-    form.addEventListener('submit', function (e) {
+    const htmlElement = document.getElementById("html");
+    let currentLang = "es";
+
+    function updateTexts() {
+      document.querySelectorAll("[data-key]").forEach(elem => {
+        const key = elem.getAttribute("data-key");
+        if (translations[currentLang] && translations[currentLang][key]) {
+          elem.textContent = translations[currentLang][key];
+          if (elem.tagName === "INPUT" || elem.tagName === "TEXTAREA") {
+            elem.placeholder = translations[currentLang][key];
+          }
+        }
+      });
+    }
+
+    document.getElementById("langToggle").addEventListener("click", () => {
+      currentLang = currentLang === "es" ? "en" : "es";
+      updateTexts();
+      document.getElementById("langToggle").textContent = currentLang === "es" ? "EN" : "ES";
+      htmlElement.lang = currentLang;
+    });
+
+    updateTexts();
+
+    // Formulario con Netlify Forms
+    const form = document.getElementById("contactForm");
+    const messageDiv = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function(e) {
       e.preventDefault();
-      messageDiv.textContent =
-        "Gracias por contactarnos, " + form.nombre.value + ". Pronto te responderemos.";
-      form.reset();
+      const formData = new FormData(form);
+
+      fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        })
+        .then(() => {
+          messageDiv.textContent = currentLang === "es" ? "Gracias por contactarnos, " + form.nombre.value + ". Pronto te responderemos." : "Thank you for contacting us, " + form.nombre.value + ". We will get back to you soon.";
+          form.reset();
+        })
+        .catch(() => {
+          messageDiv.textContent = currentLang === "es" ? "Hubo un error al enviar el formulario. Inténtalo más tarde." : "There was an error submitting the form. Please try again later.";
+        });
     });
   </script>
 </body>
