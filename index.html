@@ -23,76 +23,95 @@
 
   <main>
     <section id="inicio" class="hero section">
-      <div class="container">
-        <h2 data-key="heroTitle">Consultoría Especializada para Centros Médicos</h2>
-        <p data-key="heroText">
-          En NexxPass Consulting Group ofrecemos soluciones integrales para la
-          gestión, optimización y crecimiento de tu centro médico.
-        </p>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2 data-key="heroTitle">Consultoría Especializada para Centros Médicos</h2>
+          <p data-key="heroText">
+            En NexxPass Consulting Group ofrecemos soluciones integrales para la
+            gestión, optimización y crecimiento de tu centro médico.
+          </p>
+          <a href="#contacto" class="btn-primary" data-key="contactarBtn">Contáctanos</a>
+        </div>
+        <div class="hero-image">
+          <img src="2.jpg" alt="Consultoría médica" />
+        </div>
       </div>
     </section>
 
     <section id="servicios" class="services section">
       <div class="container">
         <h2 data-key="servicesTitle">Servicios</h2>
-        <ul>
-          <li>
-            <strong data-key="service1Title">Gestión y Administración Hospitalaria:</strong>
-            <span data-key="service1Desc">Optimización de procesos administrativos y gestión de recursos médicos.</span>
-          </li>
-          <li>
-            <strong data-key="service2Title">Calidad y Seguridad del Paciente:</strong>
-            <span data-key="service2Desc">Implementación de sistemas de calidad y protocolos de seguridad.</span>
-          </li>
-          <li>
-            <strong data-key="service3Title">Tecnologías de la Información para Salud:</strong>
-            <span data-key="service3Desc">Implementación de HIS y digitalización de procesos clínicos.</span>
-          </li>
-          <li>
-            <strong data-key="service4Title">Recursos Humanos:</strong>
-            <span data-key="service4Desc">Reclutamiento, capacitación y gestión de desempeño.</span>
-          </li>
-          <li>
-            <strong data-key="service5Title">Finanzas y Economía:</strong>
-            <span data-key="service5Desc">Análisis financiero, control de gastos y gestión de contratos.</span>
-          </li>
-          <li>
-            <strong data-key="service6Title">Marketing y Comunicación:</strong>
-            <span data-key="service6Desc">Estrategias para posicionamiento y captación de pacientes.</span>
-          </li>
-          <li>
-            <strong data-key="service7Title">Regulación y Cumplimiento:</strong>
-            <span data-key="service7Desc">Asesoría en normativas y preparación para auditorías.</span>
-          </li>
-        </ul>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3 data-key="service1Title">Gestión y Administración Hospitalaria</h3>
+            <p data-key="service1Desc">Optimización de procesos administrativos y gestión de recursos médicos.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-key="service2Title">Calidad y Seguridad del Paciente</h3>
+            <p data-key="service2Desc">Implementación de sistemas de calidad y protocolos de seguridad.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-key="service3Title">Tecnologías de la Información para Salud</h3>
+            <p data-key="service3Desc">Implementación de HIS y digitalización de procesos clínicos.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-key="service4Title">Recursos Humanos</h3>
+            <p data-key="service4Desc">Reclutamiento, capacitación y gestión de desempeño.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-key="service5Title">Finanzas y Economía</h3>
+            <p data-key="service5Desc">Análisis financiero, control de gastos y gestión de contratos.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-key="service6Title">Marketing y Comunicación</h3>
+            <p data-key="service6Desc">Estrategias para posicionamiento y captación de pacientes.</p>
+          </div>
+          <div class="service-card">
+            <h3 data-key="service7Title">Regulación y Cumplimiento</h3>
+            <p data-key="service7Desc">Asesoría en normativas y preparación para auditorías.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contacto" class="contact section">
-      <div class="container">
+      <div class="container contact-content">
         <h2 data-key="contactTitle">Contacto</h2>
-       <ul class="contact-info">
-  <li><span class="icon">📞</span> <a href="tel:+17867706827">786-770-6827</a></li>
-  <li><span class="icon">✉️</span> <a href="mailto:nexxpass@consultant.com">nexxpass@consultant.com</a></li>
-  <li><span class="icon">🌐</span> <a href="https://www.nexxpassconsulting.digital" [1](#citation-fallback-0) target="_blank" rel="noopener noreferrer">www.nexxpassconsulting.digital</a></li>
-  <li><span class="icon">📸</span> <a href="https://www.instagram.com/nexxpassconsulting" [2](#citation-fallback-1) target="_blank" rel="noopener noreferrer">@nexxpassconsulting</a></li>
-</ul>
+        <div class="contact-info">
+          <div>
+            <span class="icon">📞</span>
+            <a href="tel:+17867706827">786-770-6827</a>
+          </div>
+          <div>
+            <span class="icon">✉️</span>
+            &lt;a href="mailto:nexxpass@consultant.com"&gt;nexxpass@consultant.com</a>
+          </div>
+          <div>
+            <span class="icon">🌐</span>
+            <a href="https://www.nexxpassconsulting.digital" [1](#citation-fallback-0) target="_blank" rel="noopener noreferrer">www.nexxpassconsulting.digital</a>
+          </div>
+          <div>
+            <span class="icon">📸</span>
+            <a href="https://www.instagram.com/nexxpassconsulting" [2](#citation-fallback-1) target="_blank" rel="noopener noreferrer">@nexxpassconsulting</a>
+          </div>
+        </div>
 
-        <!-- Formulario usando Netlify Forms -->
         <form name="contact" method="POST" data-netlify="true" id="contactForm" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p class="hidden">
-      
+            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+          </p>
+
           <label for="nombre" data-key="formNameLabel">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required />
+          <input type="text" id="nombre" name="nombre" placeholder="" required />
 
           <label for="email" data-key="formEmailLabel">Correo Electrónico:</label>
-          <input type="email" id="email" name="email" required />
+          <input type="email" id="email" name="email" placeholder="" required />
 
           <label for="mensaje" data-key="formMessageLabel">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="" required></textarea>
 
-          <button type="submit" data-key="formSubmitBtn">Enviar</button>
+          <button type="submit" class="btn-primary" data-key="formSubmitBtn">Enviar</button>
         </form>
         <div id="formMessage"></div>
       </div>
@@ -100,13 +119,12 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="container footer-content">
       <p>© 2025 NexxPass Consulting Group. Todos los derechos reservados.</p>
     </div>
   </footer>
 
   <script>
-    // Traducción de textos Español-Inglés usando data-key
     const translations = {
       es: {
         inicio: "Inicio",
@@ -114,20 +132,21 @@
         contacto: "Contacto",
         heroTitle: "Consultoría Especializada para Centros Médicos",
         heroText: "En NexxPass Consulting Group ofrecemos soluciones integrales para la gestión, optimización y crecimiento de tu centro médico.",
+        contactarBtn: "Contáctanos",
         servicesTitle: "Servicios",
-        service1Title: "Gestión y Administración Hospitalaria:",
+        service1Title: "Gestión y Administración Hospitalaria",
         service1Desc: "Optimización de procesos administrativos y gestión de recursos médicos.",
-        service2Title: "Calidad y Seguridad del Paciente:",
+        service2Title: "Calidad y Seguridad del Paciente",
         service2Desc: "Implementación de sistemas de calidad y protocolos de seguridad.",
-        service3Title: "Tecnologías de la Información para Salud:",
+        service3Title: "Tecnologías de la Información para Salud",
         service3Desc: "Implementación de HIS y digitalización de procesos clínicos.",
-        service4Title: "Recursos Humanos:",
+        service4Title: "Recursos Humanos",
         service4Desc: "Reclutamiento, capacitación y gestión de desempeño.",
-        service5Title: "Finanzas y Economía:",
+        service5Title: "Finanzas y Economía",
         service5Desc: "Análisis financiero, control de gastos y gestión de contratos.",
-        service6Title: "Marketing y Comunicación:",
+        service6Title: "Marketing y Comunicación",
         service6Desc: "Estrategias para posicionamiento y captación de pacientes.",
-        service7Title: "Regulación y Cumplimiento:",
+        service7Title: "Regulación y Cumplimiento",
         service7Desc: "Asesoría en normativas y preparación para auditorías.",
         contactTitle: "Contacto",
         formNameLabel: "Nombre:",
@@ -141,20 +160,21 @@
         contacto: "Contact",
         heroTitle: "Specialized Consulting for Medical Centers",
         heroText: "At NexxPass Consulting Group, we offer comprehensive solutions for managing, optimizing, and growing your medical center.",
+        contactarBtn: "Contact Us",
         servicesTitle: "Services",
-        service1Title: "Hospital Management and Administration:",
+        service1Title: "Hospital Management and Administration",
         service1Desc: "Optimization of administrative processes and management of medical resources.",
-        service2Title: "Patient Quality and Safety:",
+        service2Title: "Patient Quality and Safety",
         service2Desc: "Implementation of quality systems and safety protocols.",
-        service3Title: "Health Information Technologies:",
+        service3Title: "Health Information Technologies",
         service3Desc: "Implementation of HIS and digitization of clinical processes.",
-        service4Title: "Human Resources:",
+        service4Title: "Human Resources",
         service4Desc: "Recruitment, training, and performance management.",
-        service5Title: "Finance and Economics:",
+        service5Title: "Finance and Economics",
         service5Desc: "Financial analysis, expense control, and contract management.",
-        service6Title: "Marketing and Communication:",
+        service6Title: "Marketing and Communication",
         service6Desc: "Strategies for positioning and patient acquisition.",
-        service7Title: "Regulation and Compliance:",
+        service7Title: "Regulation and Compliance",
         service7Desc: "Advisory on regulations and audit preparation.",
         contactTitle: "Contact",
         formNameLabel: "Name:",
@@ -188,7 +208,7 @@
 
     updateTexts();
 
-    // Formulario con Netlify Forms
+    // Netlify Forms submission
     const form = document.getElementById("contactForm");
     const messageDiv = document.getElementById("formMessage");
 
