@@ -40,35 +40,90 @@
 
     <section id="servicios" class="services section">
       <div class="container">
-        <h2 data-key="servicesTitle">Servicios</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <h3 data-key="service1Title">Gestión y Administración Hospitalaria</h3>
-            <p data-key="service1Desc">Optimización de procesos administrativos y gestión de recursos médicos.</p>
+        <h2 data-key="servicesTitle">Servicios de Consulting para Centros Médicos</h2>
+
+        <!-- Grupos con botón para expandir -->
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-1">Consultoría en Gestión y Administración Hospitalaria</button>
+          <div class="service-subcategories" id="group-1" hidden>
+            <ul>
+              <li>Optimización de procesos administrativos</li>
+              <li>Planificación y gestión de recursos hospitalarios</li>
+              <li>Gestión integral de turnos y agendas médicas</li>
+              <li>Control y reducción de costos operativos</li>
+            </ul>
           </div>
-          <div class="service-card">
-            <h3 data-key="service2Title">Calidad y Seguridad del Paciente</h3>
-            <p data-key="service2Desc">Implementación de sistemas de calidad y protocolos de seguridad.</p>
+        </div>
+
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-2">Consultoría en Calidad y Seguridad del Paciente</button>
+          <div class="service-subcategories" id="group-2" hidden>
+            <ul>
+              <li>Implementación de sistemas de calidad y acreditación</li>
+              <li>Protocolos de seguridad y manejo de riesgos</li>
+              <li>Evaluación y mejora de la experiencia del paciente</li>
+              <li>Auditorías internas de cumplimiento sanitario</li>
+            </ul>
           </div>
-          <div class="service-card">
-            <h3 data-key="service3Title">Tecnologías de la Información para Salud</h3>
-            <p data-key="service3Desc">Implementación de HIS y digitalización de procesos clínicos.</p>
+        </div>
+
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-3">Consultoría en Tecnologías de la Información para Salud (HIT)</button>
+          <div class="service-subcategories" id="group-3" hidden>
+            <ul>
+              <li>Implementación y soporte de sistemas HIS (Hospital Information System)</li>
+              <li>Integración de sistemas EHR/EMR (Historia Clínica Electrónica)</li>
+              <li>Seguridad y confidencialidad de datos médicos</li>
+              <li>Digitalización y automatización de procesos clínicos</li>
+            </ul>
           </div>
-          <div class="service-card">
-            <h3 data-key="service4Title">Recursos Humanos</h3>
-            <p data-key="service4Desc">Reclutamiento, capacitación y gestión de desempeño.</p>
+        </div>
+
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-4">Consultoría en Recursos Humanos para Centros Médicos</button>
+          <div class="service-subcategories" id="group-4" hidden>
+            <ul>
+              <li>Reclutamiento y capacitación de personal sanitario</li>
+              <li>Gestión de competencias y desarrollo profesional</li>
+              <li>Evaluación de desempeño y bienestar laboral</li>
+              <li>Planificación de turnos y control de horas</li>
+            </ul>
           </div>
-          <div class="service-card">
-            <h3 data-key="service5Title">Finanzas y Economía</h3>
-            <p data-key="service5Desc">Análisis financiero, control de gastos y gestión de contratos.</p>
+        </div>
+
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-5">Consultoría Financiera y Económica para Centros de Salud</button>
+          <div class="service-subcategories" id="group-5" hidden>
+            <ul>
+              <li>Análisis de rentabilidad y optimización financiera</li>
+              <li>Planificación presupuestaria y control de gastos</li>
+              <li>Gestión de contratos con aseguradoras y proveedores</li>
+              <li>Estrategias de facturación y cobranza médica</li>
+            </ul>
           </div>
-          <div class="service-card">
-            <h3 data-key="service6Title">Marketing y Comunicación</h3>
-            <p data-key="service6Desc">Estrategias para posicionamiento y captación de pacientes.</p>
+        </div>
+
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-6">Consultoría en Marketing y Comunicación para Centros Médicos</button>
+          <div class="service-subcategories" id="group-6" hidden>
+            <ul>
+              <li>Diseño de estrategias de posicionamiento y branding</li>
+              <li>Gestión de campañas para captar pacientes</li>
+              <li>Comunicación interna y externa orientada a salud</li>
+              <li>Análisis y segmentación de mercado sanitario</li>
+            </ul>
           </div>
-          <div class="service-card">
-            <h3 data-key="service7Title">Regulación y Cumplimiento</h3>
-            <p data-key="service7Desc">Asesoría en normativas y preparación para auditorías.</p>
+        </div>
+
+        <div class="service-group">
+          <button class="service-group-btn" aria-expanded="false" aria-controls="group-7">Consultoría en Regulación y Cumplimiento Normativo</button>
+          <div class="service-subcategories" id="group-7" hidden>
+            <ul>
+              <li>Asesoría en normativas sanitarias locales e internacionales</li>
+              <li>Preparación para auditorías y certificaciones oficiales</li>
+              <li>Gestión de documentación y permisos regulatorios</li>
+              <li>Cumplimiento de normas de bioseguridad y protección ambiental</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -84,7 +139,7 @@
           </div>
           <div>
             <span class="icon">✉️</span>
-            &lt;a href="mailto:nexxpass@consultant.com"&gt;nexxpass@consultant.com</a>
+            <a href="mailto:nexxpass@consultant.com">nexxpass@consultant.com</a>
           </div>
           <div>
             <span class="icon">🌐</span>
@@ -99,17 +154,15 @@
         <form name="contact" method="POST" data-netlify="true" id="contactForm" netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact" />
           <p class="hidden">
-            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-          </p>
-
+          
           <label for="nombre" data-key="formNameLabel">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="" required />
+          <input type="text" id="nombre" name="nombre" required />
 
           <label for="email" data-key="formEmailLabel">Correo Electrónico:</label>
-          <input type="email" id="email" name="email" placeholder="" required />
+          <input type="email" id="email" name="email" required />
 
           <label for="mensaje" data-key="formMessageLabel">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="" required></textarea>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
           <button type="submit" class="btn-primary" data-key="formSubmitBtn">Enviar</button>
         </form>
@@ -125,6 +178,7 @@
   </footer>
 
   <script>
+    // Traducciones
     const translations = {
       es: {
         inicio: "Inicio",
@@ -133,21 +187,7 @@
         heroTitle: "Consultoría Especializada para Centros Médicos",
         heroText: "En NexxPass Consulting Group ofrecemos soluciones integrales para la gestión, optimización y crecimiento de tu centro médico.",
         contactarBtn: "Contáctanos",
-        servicesTitle: "Servicios",
-        service1Title: "Gestión y Administración Hospitalaria",
-        service1Desc: "Optimización de procesos administrativos y gestión de recursos médicos.",
-        service2Title: "Calidad y Seguridad del Paciente",
-        service2Desc: "Implementación de sistemas de calidad y protocolos de seguridad.",
-        service3Title: "Tecnologías de la Información para Salud",
-        service3Desc: "Implementación de HIS y digitalización de procesos clínicos.",
-        service4Title: "Recursos Humanos",
-        service4Desc: "Reclutamiento, capacitación y gestión de desempeño.",
-        service5Title: "Finanzas y Economía",
-        service5Desc: "Análisis financiero, control de gastos y gestión de contratos.",
-        service6Title: "Marketing y Comunicación",
-        service6Desc: "Estrategias para posicionamiento y captación de pacientes.",
-        service7Title: "Regulación y Cumplimiento",
-        service7Desc: "Asesoría en normativas y preparación para auditorías.",
+        servicesTitle: "Servicios de Consulting para Centros Médicos",
         contactTitle: "Contacto",
         formNameLabel: "Nombre:",
         formEmailLabel: "Correo Electrónico:",
@@ -161,21 +201,7 @@
         heroTitle: "Specialized Consulting for Medical Centers",
         heroText: "At NexxPass Consulting Group, we offer comprehensive solutions for managing, optimizing, and growing your medical center.",
         contactarBtn: "Contact Us",
-        servicesTitle: "Services",
-        service1Title: "Hospital Management and Administration",
-        service1Desc: "Optimization of administrative processes and management of medical resources.",
-        service2Title: "Patient Quality and Safety",
-        service2Desc: "Implementation of quality systems and safety protocols.",
-        service3Title: "Health Information Technologies",
-        service3Desc: "Implementation of HIS and digitization of clinical processes.",
-        service4Title: "Human Resources",
-        service4Desc: "Recruitment, training, and performance management.",
-        service5Title: "Finance and Economics",
-        service5Desc: "Financial analysis, expense control, and contract management.",
-        service6Title: "Marketing and Communication",
-        service6Desc: "Strategies for positioning and patient acquisition.",
-        service7Title: "Regulation and Compliance",
-        service7Desc: "Advisory on regulations and audit preparation.",
+        servicesTitle: "Consulting Services for Medical Centers",
         contactTitle: "Contact",
         formNameLabel: "Name:",
         formEmailLabel: "Email:",
@@ -207,6 +233,20 @@
     });
 
     updateTexts();
+
+    // Funcionalidad desplegable para servicios
+    document.querySelectorAll('.service-group-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const expanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', !expanded);
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        if (!expanded) {
+          panel.removeAttribute('hidden');
+        } else {
+          panel.setAttribute('hidden', '');
+        }
+      });
+    });
 
     // Netlify Forms submission
     const form = document.getElementById("contactForm");
